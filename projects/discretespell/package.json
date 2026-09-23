@@ -1,0 +1,24 @@
+{
+  "name": "discretespell-cse315-reimplementation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dictionary:build": "node scripts/buildDictionary.mjs",
+    "predev": "npm run dictionary:build",
+    "dev": "vite",
+    "prebuild": "npm run dictionary:build",
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "an-array-of-english-words": "^2.0.0",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}
