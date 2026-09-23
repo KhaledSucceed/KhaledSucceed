@@ -1,42 +1,83 @@
-# DiscreteSpell — CSE315 Discrete Mathematics Reimplementation
+# DiscreteSpell — Discrete Mathematics Software
+
+[![Academic Projects CI](https://github.com/KhaledSucceed/KhaledSucceed/actions/workflows/academic-projects-ci.yml/badge.svg)](https://github.com/KhaledSucceed/KhaledSucceed/actions/workflows/academic-projects-ci.yml)
 
 **Course:** CSE315 — Discrete Mathematics  
-**University:** Galala University
+**University:** Galala University  
+**Status:** Evidence-based public reimplementation; original source package not recovered
 
-## Integrity
-The historical DiscreteSpell source ZIP is no longer recoverable from the available ChatGPT Project Files or from a full local-PC search. This package is a **clean reimplementation from recovered UI/presentation evidence and project history**. It is not represented as the original submission.
+A React/Vite spell-checker and visual lab that maps dictionary membership, Trie search, edit distance, finite-state traces, and Turing-style correction steps to discrete-mathematics concepts.
 
-## Recovered concepts
-- working spell-checker UI
+![DiscreteSpell UI preview](assets/ui-preview.svg)
+
+## Academic context
+
+Recovered project material confirms the CSE315 Spell Checker / DiscreteSpell project and preserves privacy-sensitive UI/presentation evidence in the private academic archive.
+
+## Provenance & status
+
+| Item | Status |
+|---|---|
+| Recovered project/UI evidence | Available privately |
+| Historical React/Vite source ZIP | Not recovered |
+| Public implementation | Clean reimplementation |
+| Imported English dictionary | 274,937 words |
+| Automated tests | 24 / 24 PASS |
+| Dependency audit | 0 vulnerabilities |
+| Production build | PASS |
+
+→ [Full provenance record](PROJECT_PROVENANCE.md)
+
+## Implementation
+
+- React + Vite
+- Vitest automated testing
 - imported English dictionary
-- Trie / prefix-tree membership
-- Levenshtein edit distance
-- FSM / Automata visualization
-- Turing-machine-style correction trace
-- course matrix connecting software behavior to discrete-mathematics concepts
-- React + Vite + JavaScript + Vitest
-- historical final verification recorded 24/24 tests passed
-
-## Reimplementation
-- React single-page interface
-- `an-array-of-english-words` as the imported dictionary source
-- custom Trie implementation
-- custom Levenshtein implementation
+- custom Trie / prefix-tree membership
+- custom Levenshtein edit distance
 - deterministic suggestion ranking
-- FSM character trace
-- Turing-style correction-step trace
-- 3 Vitest suites × 8 tests = 24 tests
+- finite-state-machine character trace
+- Turing-style correction trace
+- discrete-mathematics course matrix
 
-## Install
-`npm.cmd install`
+## Engineering improvement
 
-## Test
-`npm.cmd test`
+The first build bundled the full dictionary into browser JavaScript and produced a main bundle of roughly **3.6 MB**.
 
-## Build
-`npm.cmd run build`
+The final implementation:
+- generates **26 per-letter dictionary buckets** at build time;
+- lazy-loads only the relevant letter bucket;
+- retains **274,937 imported English words**;
+- reduces the main production JS to **226.42 kB** (**71.02 kB gzip**).
 
-## Run
-`npm.cmd run dev`
+## Validation
 
-Recovered screenshots/slides remain in the private local archive and are excluded from the public-safe Git history.
+Validated locally and continuously in GitHub Actions:
+- `npm audit`: **0 vulnerabilities**
+- test files: **3 / 3 PASS**
+- automated tests: **24 / 24 PASS**
+- Vite production build: **PASS**
+- production preview: **HTTP 200**
+
+→ [Validation record](VALIDATION.md)
+
+## Install, test & run
+
+```bash
+npm ci
+npm test
+npm run build
+npm run dev
+```
+
+## Limitations
+
+- The historical source ZIP is not available.
+- The visual above is a privacy-safe preview of the validated public reimplementation, not a recovered historical screenshot.
+- UI behavior is educational and is not intended to replace a production spell-checking service.
+
+## Links
+
+→ [Case study](../discretespell.md)  
+→ [Validation](VALIDATION.md)  
+→ [Provenance](PROJECT_PROVENANCE.md)

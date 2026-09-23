@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">CampusFlow validated public UI preview</title>
+<desc id="desc">Privacy-safe preview of the Java Swing reimplementation using synthetic demo data.</desc>
+<rect width="1200" height="700" rx="26" fill="#edf4fb"/><rect x="42" y="42" width="1116" height="616" rx="22" fill="#ffffff" stroke="#cfddea"/>
+<text x="78" y="100" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#10233f">CampusFlow — Algorithm Visual Lab</text>
+<text x="1120" y="96" text-anchor="end" font-family="Arial,sans-serif" font-size="16" fill="#60748a">15 Departments · 71 Courses · 16,000 Students</text>
+<rect x="76" y="132" width="230" height="44" rx="12" fill="#e9f6f7"/><text x="191" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#176a73">Selection Sort Departments</text>
+<rect x="320" y="132" width="210" height="44" rx="12" fill="#f0edfa"/><text x="425" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#5f5489">Merge Sort Courses</text>
+<rect x="544" y="132" width="220" height="44" rx="12" fill="#eef4f9"/><text x="654" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#344e68">Insertion Sort Students</text>
+<rect x="76" y="216" width="1024" height="310" rx="12" fill="#fbfdff" stroke="#d7e3ed"/><rect x="76" y="216" width="1024" height="48" rx="12" fill="#eff5fa"/>
+<text x="110" y="247" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#2b4058">Department</text>
+<g font-family="Arial,sans-serif" font-size="15" fill="#53687d"><text x="110" y="302">Department 01</text><text x="110" y="346">Department 02</text><text x="110" y="390">Department 03</text><text x="110" y="434">Department 04</text><text x="110" y="478">Department 05</text></g>
+<rect x="76" y="548" width="1024" height="78" rx="12" fill="#f6f9fc"/><text x="100" y="574" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#10233f">Complexity guide</text>
+<text x="100" y="600" font-family="Arial,sans-serif" font-size="13" fill="#65788d">Selection O(n²) · Insertion O(n²) worst case · Merge O(n log n) · Binary Search O(log n)</text>
+<text x="78" y="682" font-family="Arial,sans-serif" font-size="14" fill="#8b5a04">Privacy-safe preview · deterministic synthetic demo data · not historical university records</text></svg>

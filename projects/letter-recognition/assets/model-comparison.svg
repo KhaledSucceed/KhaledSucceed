@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">Letter Recognition model comparison</title>
+<desc id="desc">Historical course-project accuracy compared with the current reproducible baseline.</desc>
+<rect width="1200" height="620" rx="28" fill="#f7fbff"/>
+<text x="64" y="70" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#10233f">Letter Recognition — evidence-separated results</text>
+<text x="64" y="108" font-family="Arial,sans-serif" font-size="18" fill="#5a6d83">Historical course metrics and current reproducible baseline are intentionally not conflated.</text>
+<rect x="64" y="150" width="1072" height="170" rx="20" fill="#ffffff" stroke="#dbe7f1"/>
+<text x="94" y="195" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#087f8c">Historical course-project record</text>
+<text x="94" y="242" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#10233f">SVM RBF</text>
+<rect x="315" y="218" width="760" height="30" rx="15" fill="#e7eef5"/>
+<rect x="315" y="218" width="745" height="30" rx="15" fill="#2b8c99"/>
+<text x="1088" y="242" text-anchor="end" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#10233f">98.02%</text>
+<text x="94" y="286" font-family="Arial,sans-serif" font-size="16" fill="#65788d">Recovered presentation evidence · exact historical notebook/tuning not recovered</text>
+<rect x="64" y="348" width="1072" height="200" rx="20" fill="#ffffff" stroke="#dbe7f1"/>
+<text x="94" y="393" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#6557a5">Current reproducible baseline</text>
+<text x="94" y="440" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#10233f">Random Forest</text>
+<rect x="315" y="416" width="760" height="30" rx="15" fill="#e7eef5"/>
+<rect x="315" y="416" width="738" height="30" rx="15" fill="#6557a5"/>
+<text x="1088" y="440" text-anchor="end" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#10233f">97.125%</text>
+<text x="94" y="488" font-family="Arial,sans-serif" font-size="16" fill="#65788d">Fresh deterministic run · validation record and CSV output published</text>
+<text x="64" y="592" font-family="Arial,sans-serif" font-size="15" fill="#718198">Accuracy shown. See README and CSV files for macro F1, timing, and all five models.</text>
+</svg>

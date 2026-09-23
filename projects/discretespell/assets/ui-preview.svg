@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">DiscreteSpell validated public UI preview</title>
+<desc id="desc">Privacy-safe preview of the React reimplementation showing dictionary, suggestions, FSM and Turing-style panels.</desc>
+<rect width="1200" height="720" rx="28" fill="#edf4fb"/>
+<text x="64" y="66" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#087f8c">CSE315 · DISCRETE MATHEMATICS</text>
+<text x="64" y="126" font-family="Arial,sans-serif" font-size="54" font-weight="700" fill="#10233f">DiscreteSpell</text>
+<text x="64" y="162" font-family="Arial,sans-serif" font-size="18" fill="#5f7186">Sets · Trie · Edit Distance · FSM · Turing-style trace</text>
+<rect x="64" y="202" width="1072" height="210" rx="22" fill="#ffffff" stroke="#d8e4ee"/>
+<text x="94" y="242" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#60748a">WORD TO ANALYZE</text>
+<rect x="94" y="258" width="600" height="52" rx="12" fill="#fbfdff" stroke="#bdd0df"/><text x="116" y="291" font-family="Arial,sans-serif" font-size="20" fill="#10233f">algoritm</text>
+<rect x="714" y="264" width="166" height="40" rx="20" fill="#fff1d9"/><text x="797" y="289" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#8b5a04">Needs correction</text>
+<g font-family="Arial,sans-serif">
+<rect x="94" y="330" width="220" height="54" rx="12" fill="#f3f8fc"/><text x="112" y="353" font-size="19" font-weight="700" fill="#10233f">274,937</text><text x="112" y="374" font-size="12" fill="#697c91">imported English words</text>
+<rect x="326" y="330" width="220" height="54" rx="12" fill="#f3f8fc"/><text x="344" y="353" font-size="19" font-weight="700" fill="#10233f">NO</text><text x="344" y="374" font-size="12" fill="#697c91">Trie membership</text>
+<rect x="558" y="330" width="220" height="54" rx="12" fill="#f3f8fc"/><text x="576" y="353" font-size="19" font-weight="700" fill="#10233f">algorithm</text><text x="576" y="374" font-size="12" fill="#697c91">best suggestion · d=1</text>
+<rect x="790" y="330" width="220" height="54" rx="12" fill="#f3f8fc"/><text x="808" y="353" font-size="19" font-weight="700" fill="#10233f">ACCEPT</text><text x="808" y="374" font-size="12" fill="#697c91">FSM character trace</text>
+</g>
+<rect x="64" y="436" width="520" height="210" rx="22" fill="#ffffff" stroke="#d8e4ee"/>
+<text x="92" y="476" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#10233f">FSM trace</text>
+<rect x="604" y="436" width="532" height="210" rx="22" fill="#ffffff" stroke="#d8e4ee"/>
+<text x="632" y="476" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#10233f">Turing-style correction</text>
+<text x="92" y="525" font-family="Arial,sans-serif" font-size="15" fill="#65788d">q0 → qLetter → qLetter → qAccept</text>
+<text x="632" y="525" font-family="Arial,sans-serif" font-size="15" fill="#65788d">KEEP · KEEP · REPLACE · INSERT</text>
+<text x="64" y="690" font-family="Arial,sans-serif" font-size="14" fill="#718198">Privacy-safe preview of the validated public reimplementation · not a recovered historical screenshot</text>
+</svg>

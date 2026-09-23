@@ -1,42 +1,80 @@
-# CampusFlow — CSE112 Algorithms Reimplementation
+# CampusFlow — Algorithms & Java
+
+[![Academic Projects CI](https://github.com/KhaledSucceed/KhaledSucceed/actions/workflows/academic-projects-ci.yml/badge.svg)](https://github.com/KhaledSucceed/KhaledSucceed/actions/workflows/academic-projects-ci.yml)
 
 **Course:** CSE112 — Design & Analysis of Algorithms  
-**University:** Galala University
+**University:** Galala University  
+**Status:** Evidence-based public reimplementation; original source package not recovered
 
-## Integrity
-The historical CampusFlow source ZIP and `CampusFlowFinal.java` are no longer recoverable from the available ChatGPT Project Files or the local PC search. This package is a **clean reimplementation from recovered project requirements and presentation evidence**. It is not presented as the original submission.
+A Java Swing college-management project demonstrating custom sorting/search algorithms, algorithm-to-domain mapping, Big-O awareness, and executable self-validation.
 
-## Recovered project requirements
-- College Management System
-- Departments, courses, and students
-- Custom sorting algorithms
-- Search by student ID and department name
-- Big-O / step-execution emphasis
-- GUI presentation layer
-- Historical final package recorded a `--selftest` mode
+![CampusFlow UI preview](assets/ui-preview.svg)
 
-## Reimplementation mapping
-- Selection Sort → Departments by name
-- Merge Sort → Courses by enrolled-student count
-- Insertion Sort → Students by GPA
-- Binary Search → Department name
-- Binary Search → Student ID
+> **Data note:** the public reimplementation uses deterministic **synthetic demo data** matching the documented project scale. It is not original university data.
 
-## Demo data
-The original CSV files were not recovered. The reimplementation generates deterministic synthetic demo data matching the documented project scale:
-- 15 departments
-- 71 courses
-- 16,000 students
+## Academic context
 
-Synthetic data exists only to exercise the algorithms and UI; it is not represented as original university data.
+Recovered presentation evidence establishes CampusFlow as an algorithms-focused college-management system covering:
+- departments, courses, and students;
+- sorting and searching;
+- Big-O / step execution;
+- a GUI presentation layer.
 
-## Build
-`javac -d out src\CampusFlowFinal.java`
+## Provenance & status
 
-## Self-test
-`java -cp out CampusFlowFinal --selftest`
+| Item | Status |
+|---|---|
+| Recovered project/presentation evidence | Available privately |
+| Historical source ZIP / `CampusFlowFinal.java` | Not recovered |
+| Public Java implementation | Clean reimplementation |
+| Original CSV data | Not recovered |
+| Public demo data | Deterministic synthetic data |
+| Compile / self-test | Validated |
 
-## Run GUI
-`java -cp out CampusFlowFinal`
+→ [Full provenance record](PROJECT_PROVENANCE.md)
 
-Recovered slide exports remain in the private local archive and are intentionally excluded from the public-safe Git history.
+## Implementation
+
+- Java Swing desktop UI
+- Selection Sort → departments by name
+- Merge Sort → courses by enrolled-student count
+- Insertion Sort → students by GPA
+- Binary Search → department name
+- Binary Search → student ID
+- complexity guide in the UI
+- deterministic `--selftest` mode
+
+## Validation
+
+Validated locally and continuously in GitHub Actions:
+- Java 21 compile: **PASS**
+- Selection Sort: **PASS**
+- Merge Sort: **PASS**
+- Insertion Sort: **PASS**
+- department Binary Search: **PASS**
+- student-ID Binary Search: **PASS**
+- 15 / 71 / 16,000 synthetic-scale check: **PASS**
+- GUI startup smoke test: **PASS**
+- overall self-test: **PASS**
+
+→ [Validation record](VALIDATION.md)
+
+## Build & run
+
+```bash
+javac -d out src/CampusFlowFinal.java
+java -cp out CampusFlowFinal --selftest
+java -cp out CampusFlowFinal
+```
+
+## Limitations
+
+- The historical source package is not available.
+- The original CSV files are not available.
+- The visual above is a privacy-safe UI preview of the validated public reimplementation, not recovered historical evidence.
+
+## Links
+
+→ [Case study](../campusflow.md)  
+→ [Validation](VALIDATION.md)  
+→ [Provenance](PROJECT_PROVENANCE.md)
