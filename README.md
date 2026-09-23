@@ -76,7 +76,7 @@ AI systems / research engineering depth
 - **Document decisions and failures.**
 - **Treat safety, reliability, and user impact as engineering requirements.**
 
-## Connect
+## Resume\n\n→ [Read the current evidence-backed resume](resume.md)\n\n## Connect
 
 - LinkedIn: https://eg.linkedin.com/in/khaled-najeh
 - Email: khaledsucceed@gmail.com
