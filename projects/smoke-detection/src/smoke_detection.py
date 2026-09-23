@@ -5,7 +5,6 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from ultralytics import YOLO
 
 
 def build_smoke_mask(image, model, confidence):
@@ -42,6 +41,8 @@ def create_heatmap(image, mask, alpha):
 
 
 def main():
+    from ultralytics import YOLO
+
     parser = argparse.ArgumentParser(description="Hybrid YOLO + Otsu smoke detection demo")
     parser.add_argument("--model", required=True, type=Path)
     parser.add_argument("--image", required=True, type=Path)
