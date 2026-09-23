@@ -15,7 +15,7 @@ Classify English capital letters using the UCI Letter Recognition dataset while 
 - MLPClassifier
 - Random Forest
 
-## Documented results
+## Documented course-project results
 
 | Model | Test Accuracy | Macro F1 | Train Time | Prediction / Sample |
 |---|---:|---:|---:|---:|
@@ -26,14 +26,16 @@ Classify English capital letters using the UCI Letter Recognition dataset while 
 | Random Forest | 96.77% | 96.76% | 17.27 s | 0.000042 s |
 
 ## Engineering takeaway
-The highest-accuracy model was not automatically the best deployment choice. SVM RBF delivered the strongest accuracy, while Random Forest offered a more attractive speed/accuracy balance. Logistic Regression was extremely fast but underfit the nonlinear class structure.
+The highest-accuracy model was not automatically the best deployment choice. SVM RBF delivered the strongest documented accuracy, while Random Forest offered a more attractive speed/accuracy balance.
 
-## What this project demonstrates
-- Controlled model comparison
-- Multiclass classification
-- Metric-based decision making
-- Accuracy vs. inference/training trade-offs
-- Clear separation between “best metric” and “best engineering choice”
+## Reproducibility status
+The original notebook was not recovered. A transparent reimplementation has now been published and run successfully. The fresh run is stored separately from the historical metrics so the two are not conflated.
 
-## Evidence status
-These figures come from the documented course-project evaluation. The source notebook/code should be recovered and published before this becomes a standalone reproducible repository.
+→ [Public code package](letter-recognition/README.md)
+
+## What this demonstrates
+- controlled model comparison
+- multiclass classification
+- metric-based decision making
+- accuracy vs. training/inference trade-offs
+- explicit distinction between historical evidence and reproduced results

@@ -1,0 +1,6 @@
+Model,Accuracy,Macro F1,Train Time (s),Prediction Time / Sample (s)
+KNN,95.45%,95.42%,16.10,0.000682
+SVM RBF,98.02%,98.02%,63.33,0.002410
+Logistic Regression,76.95%,76.73%,4.31,0.000006
+MLPClassifier,97.45%,97.44%,111.64,0.000008
+Random Forest,96.77%,96.76%,17.27,0.000042

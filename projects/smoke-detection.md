@@ -1,37 +1,24 @@
 # Smoke Detection — Computer Vision Pipeline
 
 ## Goal
-Detect smoke regions and refine their visual segmentation using a hybrid pipeline that combines learned object detection with classical image processing.
+Detect smoke regions and refine their visual segmentation using a hybrid pipeline combining learned object detection with classical image processing.
 
 ## Pipeline
 
-```text
-input image
-   ↓
-YOLOv11x smoke localization
-   ↓
-detected ROI
-   ↓
-grayscale conversion
-   ↓
-Otsu thresholding
-   ↓
-mask refinement / visualization
-```
+`input image → YOLO localization → detected ROI → grayscale → Otsu thresholding → mask refinement → heatmap`
 
-## Documented implementation details
-- Model: `firedetect-11x.pt`
-- YOLO confidence threshold: `0.25`
+## Recovered implementation details
+- Model filename: `firedetect-11x.pt`
+- confidence threshold: `0.25`
 - Python + OpenCV + NumPy + Ultralytics YOLO
-- Otsu thresholding is applied inside the detector-produced region of interest
-- Recorded mask / heatmap smoothing kernels: `(25, 25)` and `(101, 101)`
-- Recorded blending factor: `0.5`
+- Otsu thresholding inside detector-produced regions
+- mask / heatmap smoothing kernels: `(25, 25)` and `(101, 101)`
+- alpha blending: `0.5`
 
-## Why combine approaches?
-The detector provides semantic localization; classical image processing then operates only on the candidate region. This reduces the area being segmented and makes the pipeline easier to inspect visually.
+## Reproducibility status
+The recovered source and a cleaned CLI version are now public. The original model weights and test image are still missing, so the repository is structurally validated but not yet fully runtime-reproduced.
+
+→ [Public code package](smoke-detection/README.md)
 
 ## Current limitations
-This case study documents the implemented pipeline, not a validated benchmark. Precision/recall, dataset provenance, robustness under lighting changes, smoke density, and false-positive analysis must be recovered before making performance claims.
-
-## Next engineering step
-Recover the original dataset and source files, build a reproducible evaluation set, and report detector + segmentation failure cases rather than relying only on qualitative screenshots.
+No detector precision/recall or robustness claim is made until the original or an explicitly approved evaluation model/dataset is available.

@@ -14,12 +14,12 @@ Gesture-supported accessibility prototype spanning MediaPipe feature extraction,
 ### Letter Recognition — ML Evaluation
 Compared 5 multiclass models on **20,000 samples / 26 classes**. Best documented result: **98.02% test accuracy and macro F1 with an RBF SVM**, with explicit training/inference trade-off analysis.
 
-→ [Evaluation case study](projects/letter-recognition.md)
+→ [Case study](projects/letter-recognition.md) · [Reproducible code](projects/letter-recognition/README.md)
 
 ### Smoke Detection — Computer Vision
 Hybrid Python pipeline combining YOLO localization with ROI-level OpenCV / Otsu processing for smoke-mask refinement.
 
-→ [Computer-vision case study](projects/smoke-detection.md)
+→ [Case study](projects/smoke-detection.md) · [Recovered + cleaned code](projects/smoke-detection/README.md)
 
 ### MediRush — AI + IoT Safety Venture
 Co-founded / technically contributed to a wearable safety-health concept. The team placed **3rd at RiseUp Summit Hackathon 2026** and received **EGP 75,000 seed funding through Rally Egypt 2025**.
@@ -37,16 +37,13 @@ Python/Tkinter application with interactive seat state, price tracking, and JSON
 → [Repository](https://github.com/KhaledSucceed/Cinema-booking-app)
 
 ## Current technical direction
-
 **Software engineering → ML / deep learning → LLM systems & agents → evals → production AI → AI systems engineering**
 
 I am deliberately strengthening Python engineering, algorithms, Linux, databases, APIs, testing, PyTorch/transformers, agent evaluation, reliability, and systems fundamentals.
 
 ## Resume
-
 → [Evidence-backed resume](resume.md)
 
 ## Contact
-
 - LinkedIn: https://eg.linkedin.com/in/khaled-najeh
 - Email: khaledsucceed@gmail.com
