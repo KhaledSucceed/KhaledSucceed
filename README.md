@@ -25,8 +25,17 @@ Compared **KNN, SVM RBF, Logistic Regression, MLP, and Random Forest** on the UC
 - Best documented result: **98.02% test accuracy / macro F1 with SVM RBF**
 - Analyzed accuracy, training time, and inference-speed trade-offs instead of reporting one metric only.
 
+→ [Read the case study](projects/letter-recognition.md)
+
 ### Smoke Detection — Computer Vision
 Built a Python vision pipeline combining **YOLO-based localization** with **OpenCV / Otsu thresholding** inside detected regions to refine smoke segmentation and visualization.
+
+→ [Read the case study](projects/smoke-detection.md)
+
+### Embedded Reaction Game
+PIC16F877A reaction-time game with 8 LEDs/buttons, timeout handling, LCD output, and min/max/average timing.
+
+→ [Read the case study](projects/pic-reaction-game.md)
 
 ### Cinema Booking App
 A Python/Tkinter desktop application with interactive seat state, price tracking, and JSON persistence.
